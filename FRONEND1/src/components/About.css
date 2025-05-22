@@ -1,0 +1,158 @@
+.about {
+  padding: 80px 0;
+  background-color: #FFF7EA;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  display: block;
+}
+
+.subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #000;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.services-section {
+  margin-top: 60px;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #000;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+
+.private-events {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 40px;
+}
+
+.service-card {
+  text-align: center;
+  padding: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h4 {
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.service-card:hover h4 {
+  color: #FF0000;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 300;
+}
+
+.commitment-text {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .private-events {
+    padding: 0 20px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+}
